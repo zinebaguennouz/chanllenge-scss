@@ -1,0 +1,15 @@
+{
+  "name": "rc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compiler:sass": "node-sass sass/style.scss css/style.css -w"
+  },
+  "author": "timo",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  }
+}

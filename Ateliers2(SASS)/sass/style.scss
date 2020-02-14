@@ -1,0 +1,167 @@
+$color-blue: hsl(223, 87%, 63%);
+$pale-blue: hsl(223, 100%, 88%);
+$light-red: hsl(354, 100%, 66%);
+$gray: hsl(0, 0%, 59%);
+$dark-blue: hsl(209, 33%, 12%);
+$color-silver: silver;
+$width-responsive: 600px;
+
+body {
+    margin: 0 auto;
+    font-size: 20px;
+    font-family: 'Libre Franklin', sans-serif;
+    text-align: center;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: $color-blue;
+
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    color:$color-blue ;
+    text-decoration: none;
+}
+
+%btn {
+
+    border: none;
+    color: white;
+    background-color: $color-blue;
+    height: 7vh;
+    width: $width-responsive/4;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 20px;
+}
+
+@mixin placeholder {
+    width: $width-responsive/2;
+    height: 7vh;
+    border: 1px solid $color-silver;
+    border-radius: 20px;
+}
+
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 90px;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__soon--title {
+        color: $gray;
+        font-weight: 80;
+    }
+
+    &__subscribe--sousc {
+        font-weight: 80;
+    }
+}
+
+
+    .image {
+
+        width: 65%;
+        padding-top: 5%;
+
+    }
+
+    #social {
+        margin-top: 8rem;
+            i{
+            font-size: 1rem;
+            color:$color-blue ;
+            border: .5px solid ;
+            padding: .5rem;
+            border-radius: 100%;
+            margin: .5rem;
+
+
+        }
+
+    }
+
+    h4{
+        color: $gray;
+        font-weight: 80;
+        font-size: 13px;
+    }
+
+
+    .form{
+        display: flex;
+        justify-content: center;
+
+        &__input-div--email{
+            @include placeholder ;
+        
+
+        }
+        &__button--main{
+            margin-left: 5%;
+            @extend %btn;
+            &:hover{
+                background-color:$pale-blue;
+            }
+        }
+
+
+
+    }
+
+
+
+
+
+    @media only screen and (max-width: 600px) {
+        
+           
+   .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &__input-div--email{
+        width: $width-responsive/2;
+        
+    }
+
+    &__button--main{
+        width: $width-responsive/2;
+        margin-left: 0;
+        margin-top: 2%;
+    }
+    
+
+   }
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

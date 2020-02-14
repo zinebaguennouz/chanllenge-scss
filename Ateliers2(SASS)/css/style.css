@@ -1,0 +1,89 @@
+body {
+  margin: 0 auto;
+  font-size: 20px;
+  font-family: 'Libre Franklin', sans-serif;
+  text-align: center; }
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: #4f7df3; }
+
+.attribution a {
+  color: #3e52a3;
+  color: #4f7df3;
+  text-decoration: none; }
+
+.form__button--main {
+  border: none;
+  color: white;
+  background-color: #4f7df3;
+  height: 7vh;
+  width: 150px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 20px; }
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 90px;
+  padding-top: 4rem;
+  padding-bottom: 2rem; }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .container__soon--title {
+    color: #969696;
+    font-weight: 80; }
+  .container__subscribe--sousc {
+    font-weight: 80; }
+
+.image {
+  width: 65%;
+  padding-top: 5%; }
+
+#social {
+  margin-top: 8rem; }
+  #social i {
+    font-size: 1rem;
+    color: #4f7df3;
+    border: .5px solid;
+    padding: .5rem;
+    border-radius: 100%;
+    margin: .5rem; }
+
+h4 {
+  color: #969696;
+  font-weight: 80;
+  font-size: 13px; }
+
+.form {
+  display: flex;
+  justify-content: center; }
+  .form__input-div--email {
+    width: 300px;
+    height: 7vh;
+    border: 1px solid silver;
+    border-radius: 20px; }
+  .form__button--main {
+    margin-left: 5%; }
+    .form__button--main:hover {
+      background-color: #c2d3ff; }
+
+@media only screen and (max-width: 600px) {
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .form__input-div--email {
+      width: 300px; }
+    .form__button--main {
+      width: 300px;
+      margin-left: 0;
+      margin-top: 2%; } }
